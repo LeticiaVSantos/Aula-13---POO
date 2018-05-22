@@ -1,8 +1,9 @@
 
 <%@ page pageEncoding="UTF-8" %>
 
+<nav class="navbar navbar-dark bg-dark">
 <a href="index.jsp"> Índice</a>
 | <a href="customers.jsp">Todos os Clientes</a>
 | <a href="best-customers.jsp">Melhores Clientes</a>
 | <a href="manufacturer.jsp">Fornecedores</a>
-<hr/>
+</nav>

@@ -12,12 +12,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        
         <title>Java DB WebApp</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         
-        <h1>Fornecedores</h1>
+    <br> <center><h1>Fornecedores</h1></center><br>
         
         <% 
             ArrayList<Manufacturer> list = null;
@@ -30,14 +32,16 @@
         
         %>
         
-        <table border="1">
+        <table class="table table-hover">
+            <thead class="thead-light">
             <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Estado</th>
-                <th>Cidade</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Cidade</th>
                 
             </tr>
+            </thead>
             <%if(list!= null){%>
                <%for(Manufacturer m: list){ %>
                 <tr>
